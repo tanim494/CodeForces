@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         long x = sc.nextLong();
         long y = sc.nextLong();
-        int sum = 0;
-        int a, b;
+        long sum = 0;
+        long a, b;
         a = x % 10;
         b = y % 10;
         sum = a + b;
