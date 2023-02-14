@@ -5,14 +5,9 @@ public class codeforces {
         int a = sc.nextInt();
         int b = sc.nextInt();
         float c = (float) a / b;
-        float extra = c - (int)c;
-        int floor = (int)c, cell = (int)c, round = (int)c;
-        if(extra >= 0.5) {
-            round += 1;
-        }
-        if(extra >= 0.1){
-            cell += 1;
-        }
+        int floor = (int) Math.floor(c);
+        int cell = (int) Math.ceil(c);
+        int round = (int) Math.round(c);
     System.out.printf("floor %d / %d = %d\n",a,b,floor);
     System.out.printf("ceil %d / %d = %d\n",a,b,cell);
     System.out.printf("round %d / %d = %d\n",a,b,round);
