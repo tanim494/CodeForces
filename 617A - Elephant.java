@@ -4,29 +4,31 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int step = 0;
+        int temp = 0;
         if (n / 5 >= 1) {
-            int step5 = n / 5;
-            step += step5;
+            temp = n / 5;
+            step += temp;
             n -= step * 5;
         }
         if (n / 4 >= 1) {
-            int step4 = n / 4;
-            step += step4;
+            temp = n / 4;
+            step += temp;
             n -= step * 4;
         }
         if (n / 3 >= 1) {
-            int step3 = n / 3;
-            step += step3;
+            temp = n / 3;
+            step += temp;
             n -= step * 3;
         }
         if (n / 2 >= 1) {
-            int step2 = n / 2;
-            step += step2;
+            temp = n / 2;
+            step += temp;
             n -= step * 2;
         }
         if (n / 1 >= 1) {
-            int step1 = n / 1;
-            step += step1;
+            
+            temp = n / 1;
+            step += temp;
             //n -= step * 1;
         }
         System.out.println(step);
