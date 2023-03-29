@@ -1,5 +1,31 @@
 import java.util.Scanner;
 
+public class codeforces {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int w = sc.nextInt();
+        while (w-- > 0) {
+            int n = sc.nextInt();
+            String s = sc.next().toLowerCase();
+            System.out.println(isMeow(s,n) ? "YES" : "NO");
+        }
+    }
+    public static boolean isMeow(String s, int x) {
+        StringBuilder temp = new StringBuilder();
+        temp.append(s.charAt(0));
+        for (int i = 1; i < x; i++) {
+            if (s.charAt(i) != s.charAt(i - 1)) {
+                temp.append(s.charAt(i));
+            }
+        }
+        return temp.toString().equals("meow");
+    }
+}
+
+
+/*
+import java.util.Scanner;
+
 public class Main {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
