@@ -11,14 +11,15 @@ public class codeforces {
         }
     }
     public static boolean isMeow(String s, int x) {
-        StringBuilder temp = new StringBuilder();
-        temp.append(s.charAt(0));
+        String temp = "";
+        temp += s.charAt(0);
+        
         for (int i = 1; i < x; i++) {
             if (s.charAt(i) != s.charAt(i - 1)) {
-                temp.append(s.charAt(i));
+                temp += s.charAt(i);
             }
         }
-        return temp.toString().equals("meow");
+        return temp.equals("meow");
     }
 }
 
