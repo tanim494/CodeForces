@@ -2,6 +2,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
+        String give = "codeforces";
+        int test = sc.nextInt();
+        for(int i = 0; i < test; i++) {
+            int mistake = 0;
+            String toTest = sc.next();
+            for(int j = 0; j < 10; j++) {
+                if( toTest.charAt(j) != give.charAt(j) ) {
+                    mistake++;
+                }
+            }
+            System.out.println(mistake);
+        }
+   }
+}
+
+
+/*
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
         int test = sc.nextInt();
         int mistake = 0;
         for(int i = 0; i < test; i++) {
